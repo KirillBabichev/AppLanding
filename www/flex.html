@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>App landing</title>
+
+    <!-- Grid styles -->
+    <link rel="stylesheet" href="css/grid.css">
+
+    <!-- Flex styles -->
+    <link rel="stylesheet" href="css/flex.css">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .flex-container {
+            padding: 20px;
+            background-color: lightslategray;
+            /* display: flex; */
+            /* flex-direction: row; */
+            /* justify-content: flex-start, flex-end, center, space-between, space-around */
+            /* justify-content: flex-start; */
+            /* align-items: flex-end, flex-start, center, baseline, stretch */
+            /* align-items: center; */
+            /* flex-wrap: wrap; */
+            /* height: 500px; */
+        }
+        .flex-element {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px;
+            color: #fff;
+        }
+        .flex-element.one {
+            background-color: lightcoral;
+            /* flex-grow: 2; */
+            /* height: 100px; */
+            /* order: 3; */
+        }
+        .flex-element.two {
+            background-color: greenyellow;
+            /* width: 300px; */
+            /* margin-left: 30px; */
+            /* flex-grow: 1 */
+            /* order: 1; */
+        }
+        .flex-element.three {
+            background-color: lightgray;
+            /* margin-left: auto; */
+            /* margin-right: auto; */
+            /* flex-grow: 1; */
+            /* order: 2; */
+        }
+        .flex-element.four {
+            background-color: lightskyblue;
+            /* flex-grow: 1; */
+            /* order: 4; */
+            /* align-self: flex-start; */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container d-flex justify-content-between">
+        <div class="flex-element one">1</div>
+        <div class="flex-element two">2</div>
+        <div class="flex-element three">3</div>
+        <div class="flex-element four">4</div>
+    </div>
+</body>
+</html>
